@@ -1,0 +1,262 @@
+:root {
+    --company-color: #E2C044;
+    --bg-supplier: #0E9594;
+    --bg-main-table: #F2542D;
+    --bg-archive: #DC3545;
+    --bg-store: #104911;
+    --bg-category: #694873;
+    --bg-unit: #FF4A1C;
+    --bg-user: #ED33B9;
+    --bg-role: #945D5E;
+    --bg-productUnit: #A9FFCB;
+    --bg-product: #2D82B7;
+    --bg-permission: #d66ba0;
+    --bg-productDetail: #FAFF7F;
+    --bg-cart: #256EFF;
+    --bg-order:#48E5C2;
+}
+
+p {
+    margin: 0px;
+}
+
+.company {
+    color: var(--company-color) !important;
+}
+
+.supplier {
+    color: var(--bg-supplier);
+}
+
+.store {
+    color: var(--bg-store);
+}
+
+.user {
+    color: var(--bg-user);
+}
+
+.category {
+    color: var(--bg-category);
+}
+
+.unit {
+    color: var(--bg-unit);
+}
+
+.product {
+    color: var(--bg-product);
+}
+
+.cart {
+    color: var(--bg-cart);
+}
+
+.order {
+    color: var(--bg-order);
+}
+
+.productDetail {
+    color: var(--bg-productDetail);
+}
+
+.productUnit {
+    color: var(--bg-productUnit);
+}
+
+.rolePermission {
+    color: var(--bg-rolePermission);
+}
+
+.storeProduct {
+    background: -webkit-linear-gradient(var(--bg-store), var(--bg-product));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    color: var(--bg-role);
+}
+
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.575) !important;
+}
+
+.bg-company {
+    background-color: var(--company-color) !important;
+}
+
+.bg-supplier {
+    background-color: var(--bg-supplier);
+    color: white;
+}
+
+.bg-store {
+    background-color: var(--bg-store);
+    color: white;
+}
+
+.bg-user {
+    background-color: var(--bg-user);
+    color: white;
+}
+
+.bg-order {
+    background-color: var(--bg-order);
+    color: black;
+}
+
+.bg-category {
+    background-color: var(--bg-category);
+    color: white;
+}
+
+.bg-cart {
+    background-color: var(--bg-cart);
+    color: white;
+}
+
+.bg-mt {
+    background-color: var(--bg-main-table) !important;
+    color: white !important;
+}
+
+.bg-archive {
+    background-color: var(--bg-archive) !important;
+    color: white !important;
+}
+
+.bg-unit {
+    background-color: var(--bg-unit) !important;
+    color: white !important;
+}
+
+
+.bg-product {
+    background-color: var(--bg-product) !important;
+    color: white !important;
+}
+
+.bg-permission {
+    background-color: var(--bg-permission) !important;
+    color: white !important;
+}
+
+.bg-rolePermission {
+    background: linear-gradient(90deg, var(--bg-role) 0%, var(--bg-permission) 100%);
+    color: black !important;
+}
+
+.bg-roleUser {
+    background: linear-gradient(90deg, var(--bg-role) 0%, var(--bg-user) 100%);
+    color: black !important;
+}
+
+.bg-storeProduct {
+    background: linear-gradient(90deg, var(--bg-store) 0%, var(--bg-product) 100%);
+    color: white !important;
+}
+
+.bg-productUnit {
+    background-color: var(--bg-productUnit) !important;
+    color: black !important;
+}
+
+.bg-role {
+    background-color: var(--bg-role) !important;
+    color: white !important;
+}
+
+.bg-productDetail {
+    background-color: var(--bg-productDetail) !important;
+    color: black !important;
+}
+
+.d-right,
+form,
+.card-body {
+    direction: rtl;
+    text-align: right;
+}
+
+.d-left {
+    direction: ltr;
+    text-align: left;
+}
+
+.select2-container .select2-selection--single {
+    height: 38px !important;
+}
+
+
+.input-group .input-group-prepend .input-group-text {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0rem;
+
+    background-color: #9B5094;
+    color: white;
+}
+
+/* Tree view */
+details {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    max-height: 2.5em !important;
+    transition: all 0.1s ease;
+}
+
+details ::-webkit-details-marker {
+    display: none;
+}
+
+details>summary {
+    position: relative;
+    margin-top: 0.25em;
+    color: #99e;
+    padding: 0.1em 0.5em 0.2em;
+    background: #444;
+}
+
+details>summary:before {
+    content: "⊞";
+    color: #eee;
+    font-size: 0.5em;
+    margin-right: 0.5em;
+}
+
+details[open]>summary {
+    background: #66e;
+    color: #eee;
+}
+
+details[open]>summary:before {
+    content: "⊟";
+    color: #ccc;
+}
+
+.folder {
+    margin: 0 0 0.5em 0.86em;
+    padding: 0.5em 0em 0.5em 1.5em;
+    border-left: 0.1em #ccc dotted;
+    border-bottom: 0.1em #ccc dotted;
+}
+
+.folder p {
+    margin: 0;
+}
+
+details[open] {
+    height: auto;
+    max-height: 99em !important;
+    transition: all 1.2s ease;
+}
+
+details:not([open]) .folder {
+    height: 0px !important;
+}
+
+/* Tree view */
