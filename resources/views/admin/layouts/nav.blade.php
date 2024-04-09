@@ -19,7 +19,7 @@
             </a>
         </li>
         <li class="nav-item d-none d-sm-inline-block ml-3">
-            <a href="{{ route('admin.logout') }}" class="btn btn-success mb-1">
+            <a href="{{ route('admin.logout') }}" class="btn btn-danger mb-1">
                 logout
             </a>
         </li>

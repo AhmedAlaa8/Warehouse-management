@@ -29,12 +29,12 @@ Route::get('/', function () {
 
 Route::get('/admin/loginPage', [AuthController::class, 'loginPage'])->name('admin.loginPage');
 Route::post('/admin/login', [AuthController::class, 'login'])->name('admin.login');
-Route::get('/admin/logout', [AuthController::class, 'logout'])->name('admin.logout');
 
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
     Route::view('/', "admin.index")->name('home');
 
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
     /* ****************           Company             *************** */
     Route::get('company/archive', [CompanyController::class, 'archive'])->name('company.archive');
